@@ -1,0 +1,13 @@
+1) Dólar > Peso argentino
+2) Peso argentino > Dólar
+3) Dólar > Real brasileiro
+4) Real brasileiro > Dólar
+5) Dólar > Peso colombiano
+6) Peso colombiano > Dólar
+7) Sair
+
+Your API Key: 049f00ec892dac2697d0faa2
+Example Request: https://v6.exchangerate-api.com/v6/ "049f00ec892dac2697d0faa2" /latest/USD
+https://v6.exchangerate-api.com/v6/049f00ec892dac2697d0faa2/latest/USD
+
+https://app.exchangerate-api.com/dashboard/confirmed
