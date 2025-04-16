@@ -1,6 +1,6 @@
 package exceptions;
 
-public class ErroDeConversaoDeMoedaException {
+public class ErroDeConversaoDeMoedaException extends RuntimeException {
     private String mensagem;
 
     public ErroDeConversaoDeMoedaException(String mensagem) {
