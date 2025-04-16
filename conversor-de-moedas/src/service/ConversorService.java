@@ -28,7 +28,7 @@ public class ConversorService {
     }
 
     private void validarMoeda(String moeda) {
-        if (moeda == null || moeda.length() != 8 || !moeda.matches("[a-zA-Z]+")) {
+        if (moeda == null || moeda.length() != 3 || !moeda.matches("[a-zA-Z]+")) {
             throw new ErroDeConversaoDeMoedaException("Código de moeda inválido.");
         }
     }
