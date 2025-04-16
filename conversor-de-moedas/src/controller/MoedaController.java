@@ -17,9 +17,9 @@ public class MoedaController {
         this.gson = gson;
     }
 
-    public Moeda buscaValorMoeda(String valor) throws
+    public Moeda buscaValorMoeda(String codigoMoeda) throws
             IOException, InterruptedException, ErroDeConversaoDeMoedaException {
-        String json = service.buscaMoeda(valor);
+        String json = service.buscaMoeda(codigoMoeda);
         MoedaExchangeRateAPI moedaExchangeRateAPI = gson.fromJson(json, MoedaExchangeRateAPI.class);
         return new Moeda(moedaExchangeRateAPI);
     }
