@@ -12,7 +12,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         String moeda = "";
 
-        Gson gson = GsonConfig.criarGson();
+        Gson gson = GsonConfig.getGsonInstance();
         MoedaController controller = new MoedaController(new ConversorService(), gson);
 
         scanner.close();
