@@ -2,6 +2,7 @@ package application;
 
 import com.google.gson.Gson;
 import controller.MoedaController;
+import exceptions.ErroDeConversaoDeMoedaException;
 import service.ConversorService;
 import utils.GsonConfig;
 
@@ -11,12 +12,12 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Gson gson = GsonConfig.getGsonInstance();
-        MoedaController controller = new MoedaController(new ConversorService(), gson);
+        MoedaController controller = new MoedaController(new ConversorService());
 
         int opcao = 0;
 
         while (opcao != 7) {
-            System.out.print("***************************************");
+            System.out.print("\n***************************************");
             System.out.println("\nSelecione uma opção");
             System.out.println("1) Dólar(USD) -> Peso argentino(ARS)");
             System.out.println("2) Peso argentino(ARS) -> Dólar(USD)");
@@ -54,13 +55,16 @@ public class Main {
 
             try {
                 double taxa = controller.getTaxaDeConversao(moedaOrigem, moedaDestino);
+
                 double convertido = valorEntrada * taxa;
 
                 System.out.printf("Taxa utilizada: %.4f%n", taxa);
                 System.out.printf("Valor de entrada: %.2f %s%n", valorEntrada, moedaOrigem);
                 System.out.printf("Valor convertido: %.2f %s%n", convertido, moedaDestino);
-            } catch (Exception e) {
+            } catch (ErroDeConversaoDeMoedaException e) {
                 System.out.println("Erro ao converter moeda: " + e.getMessage());
+            } catch (Exception e) {
+                System.out.println("Erro inesperado: " + e.getMessage());
             }
         }
         scanner.close();
