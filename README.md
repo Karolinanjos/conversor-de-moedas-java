@@ -1,22 +1,22 @@
-<h1 align="center">💱 Challenge: Conversor de Moedas (<a href="https://www.alura.com.br">alura</a>) 💰<br>
+<h1 align="center">💱 Challenge: Conversor de Moedas (<a href="https://www.alura.com.br">Alura</a>) 💰<br>
   <img src="https://img.shields.io/badge/status-Concluído-brightgreen">
 </h1>
 
 ---
 
-<h2 align="center">✅ Projeto concluído! ✅</h2>
+<h2 align="center">✅ Projeto concluído</h2>
 
-Este projeto faz parte da formação Back-End Java Orientado a Objetos GB - ONE [alura](https://www.alura.com.br).
+Este projeto faz parte da formação **Back-End Java Orientado a Objetos - GB/ONE**, da [Alura](https://www.alura.com.br).
 
 ---
 
 <h2 align="center">🌐 API Utilizada</h2>
 
-Este projeto utiliza a [ExchangeRateAPI](https://www.exchangerate-api.com/), uma API gratuita e sem necessidade de autenticação, que fornece taxas de câmbio atualizadas em tempo real entre diversas moedas.
+Este projeto utiliza a [ExchangeRateAPI](https://www.exchangerate-api.com/), uma API gratuita que fornece taxas de câmbio atualizadas em tempo real — **sem necessidade de autenticação**.
 
 ---
 
-<h2 align="center">🖥️ Tecnologias e Conceitos Utilizados</h2>
+<h2 align="center">📚 Conceitos e Recursos Utilizados</h2>
 
 - Java 17+
 - API HTTP (`java.net.http.HttpClient`)
@@ -26,7 +26,7 @@ Este projeto utiliza a [ExchangeRateAPI](https://www.exchangerate-api.com/), uma
 
 ---
 
-<h2 align="center">🛠️ Tecnologias e Ferramentas</h2>
+<h2 align="center">🧰 Ferramenta Utilizada</h2>
 
 - 💻 [Eclipse IDE](https://www.eclipse.org/): Ambiente de desenvolvimento integrado.
 
@@ -36,16 +36,16 @@ Este projeto utiliza a [ExchangeRateAPI](https://www.exchangerate-api.com/), uma
 
 ```plaintext
 ├── application
-│   └── Main.java             # Interface principal via terminal
+│   └── Main.java                     # Interface principal via terminal
 ├── controller
-│   └── MoedaController.java  # Lógica de controle das conversões
+│   └── MoedaController.java          # Lógica de controle das conversões
 ├── service
-│   └── ConversorService.java # Comunicação com a API externa
+│   └── ConversorService.java         # Comunicação com a API externa
 ├── models
 │   ├── Moeda.java
-│   └── MoedaExchangeRateAPI.java # Record para mapear o JSON da API
+│   └── MoedaExchangeRateAPI.java     # Record para mapear o JSON da API
 ├── utils
-│   └── GsonConfig.java       # Configuração global do Gson
+│   └── GsonConfig.java               # Configuração global do Gson
 ├── exceptions
 │   └── ErroDeConversaoDeMoedaException.java
 └── README.md
@@ -73,12 +73,12 @@ Este projeto utiliza a [ExchangeRateAPI](https://www.exchangerate-api.com/), uma
    ```bash
    cd conversor-de-moedas
    ```
-3. **Compile e execute**:
+2. **Compile e execute**:
    ```bash
    javac -d bin src/**/*.java
    java -cp bin application.Main
    ```
-5. **Siga as instruções no terminal para realizar as conversões.**
+3. **Siga as instruções no terminal para realizar as conversões.**
 
 ---
 
@@ -142,4 +142,5 @@ Se tiver dúvidas ou sugestões, entre em contato:
 
 <h2 align="center">📄 Licença</h2>
 
-Este projeto é de livre uso para fins educacionais. Para fins comerciais, consulte a licença da API utilizada.
+Este projeto é disponibilizado para **fins educacionais e não comerciais**.  
+Para uso comercial ou redistribuição, consulte os termos de uso da [ExchangeRateAPI](https://www.exchangerate-api.com/docs/overview#pricing).
