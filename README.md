@@ -1,10 +1,13 @@
-<h1 align="center">💱 Challenge Conversor de Moedas [alura](https://www.alura.com.br) 💰<br> <img stc="https://img.schields.io/badge/status-Concluído-green"></h1>
+<h1 align="center">💱 Challenge: Conversor de Moedas (<a href="https://www.alura.com.br">alura</a>) 💰<br>
+  <img src="https://img.shields.io/badge/status-Concluído-brightgreen">
+</h1>
 
 ---
 
 <h2 align="center">✅ Projeto concluído! ✅</h2>
 
-Este projeto faz parte da formação **Back-End Java Orientado a Objetos GB - ONE** [alura](https://www.alura.com.br).
+Este projeto faz parte da formação Back-End Java Orientado a Objetos GB - ONE [alura](https://www.alura.com.br).
+
 ---
 
 <h2 align="center">🌐 API Utilizada</h2>
@@ -81,7 +84,7 @@ Este projeto utiliza a [ExchangeRateAPI](https://www.exchangerate-api.com/), uma
 
 <h2 align="center">📌 Exemplo de Uso</h2>
 
-```scss
+```text
 ***************************************
 Selecione uma opção
 1) Dólar(USD) -> Peso argentino(ARS)
