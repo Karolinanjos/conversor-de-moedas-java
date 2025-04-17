@@ -14,6 +14,8 @@ public class Main {
         Gson gson = GsonConfig.getGsonInstance();
         MoedaController controller = new MoedaController(new ConversorService());
 
+        System.out.println("\nSeja bem-vindo(a) ano Conversor de Moedas!");
+
         int opcao = 0;
 
         while (opcao != 7) {
