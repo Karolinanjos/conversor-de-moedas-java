@@ -16,4 +16,18 @@ public class Moeda {
     public Double getTaxa(String codigoMoedaDestino) {
         return conversion_rates.get(codigoMoedaDestino);
     }
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("Resultado: ").append(result).append("\n");
+        sb.append("Base Code: ").append(base_code).append("\n");
+        sb.append("Taxas de conversão: \n");
+
+        for (Map.Entry<String, Double> entry : conversion_rates.entrySet()) {
+            sb.append(entry.getKey()).append(": ").append(entry.getValue()).append("\n");
+        }
+
+        return sb.toString();
+    }
 }

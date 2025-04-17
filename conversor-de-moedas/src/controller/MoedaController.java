@@ -23,4 +23,16 @@ public class MoedaController {
         MoedaExchangeRateAPI moedaExchangeRateAPI = gson.fromJson(json, MoedaExchangeRateAPI.class);
         return new Moeda(moedaExchangeRateAPI);
     }
+
+    public double getTaxaDeConversao(String moedaOrigem, String moedaDestino)
+            throws IOException, InterruptedException {
+        Moeda moeda = buscaValorMoeda(moedaOrigem);
+        Double taxa = moeda.getTaxa(moedaDestino);
+
+        if (taxa == null) {
+            throw new ErroDeConversaoDeMoedaException("Moeda de destino não encontrada: " + moedaDestino);
+        }
+
+        return taxa;
+    }
 }
