@@ -81,7 +81,7 @@ USD ⇄ COP (Peso Colombiano)
 
 Clone o repositório:
 
-git clone https://github.com/Karolinanjos/conversor-de-moedas
+git clone https://github.com/Karolinanjos/conversor-de-moedas-java
 cd conversor-de-moedas
 
 ---
