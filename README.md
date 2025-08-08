@@ -16,16 +16,6 @@ Aqui, criei um **conversor de moedas simples, funcional e 100% em Java**, com co
 
 ---
 
-<h2 align="center">🎬 Demonstração</h2>
-
-<p align="center">
-  <em>⬇️ Aqui você pode incluir um vídeo ou GIF mostrando o projeto em funcionamento:</em><br><br>
-  <strong>📽️ Exemplo:</strong><br>
-  <img src="https://raw.githubusercontent.com/Karolinanjos/assets/main/demo-conversor.gif" alt="Demonstração Conversor de Moedas" width="600px">
-</p>
-
----
-
 <h2 align="center">🌐 API Utilizada</h2>
 
 - [ExchangeRateAPI](https://www.exchangerate-api.com/): API gratuita para taxas de câmbio em tempo real
