@@ -1,40 +1,58 @@
-<h1 align="center">💱 Challenge: Conversor de Moedas (<a href="https://www.alura.com.br">Alura</a>) 💰<br>
+<h1 align="center">💱 Challenge: Conversor de Moedas – <a href="https://www.alura.com.br">Alura</a> 💰</h1>
+
+<p align="center">
   <img src="https://img.shields.io/badge/status-Concluído-brightgreen">
-</h1>
+  <img src="https://img.shields.io/badge/feito%20com-Java-007396?logo=java">
+</p>
+
+<p align="center"><strong>💻✨ Karolina Anjos – Dev Java</strong></p>
 
 ---
 
-<h2 align="center">✅ Projeto concluído</h2>
+<h2 align="center">✅ Projeto Finalizado</h2>
 
-Este projeto faz parte da formação **Back-End Java Orientado a Objetos - GB/ONE**, da [Alura](https://www.alura.com.br).
+Este projeto foi desenvolvido como parte da formação **Back-End Java com Orientação a Objetos (GB/ONE)** pela [Alura](https://www.alura.com.br).
+Aqui, criei um **conversor de moedas simples, funcional e 100% em Java**, com consumo de API real e estrutura de código bem organizada.
+
+---
+
+<h2 align="center">🎬 Demonstração</h2>
+
+<p align="center">
+  <em>⬇️ Aqui você pode incluir um vídeo ou GIF mostrando o projeto em funcionamento:</em><br><br>
+  <strong>📽️ Exemplo:</strong><br>
+  <img src="https://raw.githubusercontent.com/Karolinanjos/assets/main/demo-conversor.gif" alt="Demonstração Conversor de Moedas" width="600px">
+</p>
 
 ---
 
 <h2 align="center">🌐 API Utilizada</h2>
 
-Este projeto utiliza a [ExchangeRateAPI](https://www.exchangerate-api.com/), uma API gratuita que fornece taxas de câmbio atualizadas em tempo real — **sem necessidade de autenticação**.
+- [ExchangeRateAPI](https://www.exchangerate-api.com/): API gratuita para taxas de câmbio em tempo real
+- ✅ Sem autenticação | Atualizações rápidas | Fácil integração
 
 ---
 
-<h2 align="center">📚 Conceitos e Recursos Utilizados</h2>
+<h2 align="center">📚 Tecnologias e Conceitos Aplicados</h2>
 
-- Java 17+
-- API HTTP (`java.net.http.HttpClient`)
-- Deserialização JSON com [Gson](https://github.com/google/gson)
-- Manipulação de registros em Java (`record`)
-- Tratamento de exceções personalizado
-
----
-
-<h2 align="center">🧰 Ferramenta Utilizada</h2>
-
-- 💻 [Eclipse IDE](https://www.eclipse.org/): Ambiente de desenvolvimento integrado.
+- ☕ Java 17+
+- 🌐 `HttpClient` para chamadas HTTP
+- 🔄 `Gson` para trabalhar com JSON
+- 📦 Uso de `record` para modelagem de dados
+- 🚨 Exceções personalizadas
+- 🧩 Organização por camadas (MVC)
+- 🧼 Código limpo e modular
 
 ---
 
-<h2 align="center">📦 Organização do Projeto</h2>
+<h2 align="center">🧰 Ferramentas</h2>
 
-```plaintext
+- 💻 [Eclipse IDE](https://www.eclipse.org/): Ambiente de desenvolvimento
+
+---
+
+<h2 align="center">📦 Estrutura do Projeto</h2>
+
 ├── application
 │   └── Main.java                     # Interface principal via terminal
 ├── controller
@@ -49,44 +67,52 @@ Este projeto utiliza a [ExchangeRateAPI](https://www.exchangerate-api.com/), uma
 ├── exceptions
 │   └── ErroDeConversaoDeMoedaException.java
 └── README.md
-```
 
 ---
 
 <h2 align="center">🧮 Funcionalidades</h2>
+🔄 Conversão de moedas em tempo real
 
-- Consulta em tempo real das taxas de câmbio.
-- Conversão entre:
-  - Dólar (USD) e Peso Argentino (ARS)
-  - Dólar (USD) e Real Brasileiro (BRL)
-  - Dólar (USD) e Peso Colombiano (COP)
-- Interface simples via terminal.
+💬 Interface simples via terminal
+
+💱 Conversões disponíveis:
+
+USD ⇄ ARS (Peso Argentino)
+
+USD ⇄ BRL (Real Brasileiro)
+
+USD ⇄ COP (Peso Colombiano)
+
+´´´
 
 ---
 
 <h2 align="center">▶️ Como Executar</h2>
 
-1. **Clone o repositório**:
-   ```bash
-   git clone https://github.com/renancvitor/conversor-de-moedas
-   ```
-   ```bash
-   cd conversor-de-moedas
-   ```
-2. **Compile e execute**:
-   ```bash
-   javac -d bin src/**/*.java
-   java -cp bin application.Main
-   ```
-3. **Siga as instruções no terminal para realizar as conversões.**
+Clone o repositório:
+
+git clone https://github.com/Karolinanjos/conversor-de-moedas
+cd conversor-de-moedas
 
 ---
 
-<h2 align="center">📌 Exemplo de Uso</h2>
+Compile e execute:
 
-```text
-***************************************
+javac -d bin src/**/*.java
+java -cp bin application.Main
+
+---
+
+Use o terminal para realizar as conversões.
+
+---
+
+<h2 align="center">📌 Exemplo no Terminal</h2>
+
+---
+
 Selecione uma opção
+
 1) Dólar(USD) -> Peso argentino(ARS)
 2) Peso argentino(ARS) -> Dólar(USD)
 3) Dólar(USD) -> Real brasileiro(BRL)
@@ -94,53 +120,51 @@ Selecione uma opção
 5) Dólar(USD) -> Peso colombiano(COP)
 6) Peso colombiano(COP) -> Dólar(USD)
 7) Sair
-***************************************
+
+---
+
 Opção: 4
 
 Digite o valor para converter:  590
 Taxa utilizada: 0,1700
 Valor de entrada: 590,00 BRL
 Valor convertido: 100,30 USD
-```
----
 
 <h2 align="center">🔧 Requisitos</h2>
 
-- JDK 17 ou superior
-- Acesso à internet (para consultar a API de câmbio)
+☑️ JDK 17 ou superior
+☑️ Acesso à internet (API externa)
 
 ---
 
 <h2 align="center">📢 Agradecimento</h2>
 
-Agradeço à [alura](https://www.alura.com.br) por essa oportunidade de aprendizado contínuo e por incentivar o desenvolvimento de habilidades de programação de forma estruturada e desafiadora. 🚀
+Agradeço à Alura pela trilha de aprendizado, prática e inspiração para esse projeto.
+E a todos que apoiam meu crescimento na programação! 💚
 
 ---
 
-<h2 align="center">🤝 Contribuições</h2>
+<h2 align="center">🤝 Contribuindo</h2>
+Quer colaborar?
 
-Se você quiser contribuir para o projeto, siga estas etapas:
+Faça um fork 🍴
 
-1. Faça um fork deste repositório.
-2. Crie uma nova branch (`git checkout -b feature/alguma-coisa`).
-3. Faça suas mudanças.
-4. Envie um pull request explicando as mudanças realizadas.
+Crie uma branch: git checkout -b minha-feature
 
-Obrigado pelo interesse em contribuir!
+Faça suas alterações
+
+Envie um pull request explicando a melhoria
 
 ---
 
 <h2 align="center">📫 Contato</h2>
 
-Se tiver dúvidas ou sugestões, entre em contato:
-
-- 📧 **E-mail**: [renan.vitor.cm@gmail.com](mailto:renan.vitor.cm@gmail.com)
-- 🐦 **GitHub**: [renancvitor](https://github.com/renancvitor)
-- 🟦 **LinkedIn**: [Renan Vitor](https://www.linkedin.com/in/renan-vitor-developer/)
+🐙 GitHub: Karolinanjos
+🧩 LinkedIn: Karolina Anjos
 
 ---
 
 <h2 align="center">📄 Licença</h2>
 
-Este projeto é disponibilizado para **fins educacionais e não comerciais**.  
-Para uso comercial ou redistribuição, consulte os termos de uso da [ExchangeRateAPI](https://www.exchangerate-api.com/docs/overview#pricing).
+Este projeto é de uso educacional e não comercial.
+Para fins comerciais, consulte os termos da ExchangeRateAPI.
